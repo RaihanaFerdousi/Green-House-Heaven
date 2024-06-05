@@ -4,16 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Green House Heaven</title>
+  <style>
+    header {
+      position: relative;
+      background-image: url('/images/Bannerimage.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the background darker or lighter */
+    }
+  </style>
 </head>
 <body>
-     <header>
+  <header class="py-20 pb-24  text-white relative">
+    <div class="overlay"></div> <!-- Add this div for the overlay -->
+    <div class="relative z-10"> <!-- Add this div and the z-index to bring the content above the overlay -->
+      <div class="flex justify-between px-20 pb-20">
+        <div>
+          <h3 class="text-2xl font-bold">Green Heaven</h3>
+        </div>
+        <ul class="flex gap-5 font-semibold">
+          <li>About Us</li>
+          <li>Products</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-5">Welcome to Green <br> House Heaven</h1>
+        <p>Explore the best in organic, sustainably sourced foods. From fresh produce to <br> artisanal goods, Green Haven offers quality you can trust. Join us in living healthier and greener.</p>
+        <button class="bg-gradient-to-r from-[#FF4C00] to-[#CC6438] text-white font-semibold px-5 py-2 rounded mt-5">Explore More</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="my-20">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-semibold mb-5">Flowers</h2>
+            <p>There are many types of flowers we offer. <br> There are unique & rare plants we offer as well.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:md:grid-cols-3 justify-items-center gap-5 mx-80"> <!-- Added justify-items-center class -->
+            <img class="w-44" src="/images/flower-1.png" alt="">
+            <img class="w-44" src="/images/flower-2.png" alt="">
+            <img class="w-44" src="/images/flower-3.png" alt="">
+            <img class="w-44" src="/images/flower-4.png" alt="">
+            <img class="w-44" src="/images/flower-5.png" alt="">
+            <img class="w-44" src="/images/flower-6.png" alt="">
+        </div>
+    </section>
+    
+  </main>
+  <footer>
 
-     </header>
-     <main>
-
-     </main>
-     <footer>
-        
-     </footer>
+  </footer>
 </body>
 </html>
